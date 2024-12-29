@@ -8,16 +8,14 @@ import Register from "./pages/Auth/Register";
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/policy" element={<PolicyPage />} />
-        <Route path="/*" element={<PageNotFoundPage />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/policy" element={<PolicyPage />} />
+      <Route path="/*" element={<PageNotFoundPage />} />
+    </Routes>
   );
 }
 
